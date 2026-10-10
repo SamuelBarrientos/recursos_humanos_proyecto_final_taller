@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="12.0" prefWidth="380.0" prefHeight="320.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.magcorporation.kinal.controller.LoginController">
+    <padding>
+        <Insets top="25.0" right="25.0" bottom="25.0" left="25.0" />
+    </padding>
+
+    <Label text="Inicio de Sesión">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+
+    <VBox spacing="4.0" fillWidth="true">
+        <Label text="Correo Electrónico:" />
+        <TextField fx:id="txtCorreo" promptText="ejemplo@kinal.edu.gt" />
+    </VBox>
+
+    <VBox spacing="4.0" fillWidth="true">
+        <Label text="Contraseña:" />
+        <PasswordField fx:id="txtPassword" promptText="••••••••" />
+    </VBox>
+
+    <Button text="Ingresar" onAction="#handleLogin" prefWidth="150.0" />
+    <Button text="Crear Cuenta" onAction="#handleIrRegistro" prefWidth="150.0" />
+</VBox>
